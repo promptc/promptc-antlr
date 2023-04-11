@@ -1,5 +1,18 @@
 lexer grammar PromptBlock;
 
-SCRIPT: '{%' STRING '%}';
-STRING: (~( '{' | '}' ) | '{{' | '}}' )+;
-VARIABLE: '{' STRING '}';
+SCRIPT
+    : '{%' STRING '%}'
+    ;
+
+BRACKET_STRING
+    : '{{'
+    | '}}'
+    ;
+
+VARIABLE
+    : '{' STRING '}'
+    ;
+
+STRING
+    : (~( '{' | '}' ))+
+    ;
