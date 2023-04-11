@@ -1,0 +1,6 @@
+main
+lexer
+.idea
+.vscode
+.antlr
+go.*
