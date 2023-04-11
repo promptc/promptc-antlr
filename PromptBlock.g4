@@ -1,6 +1,6 @@
 grammar PromptBlock;
 
-parse: expr* EOF;
+parse: expr*;
 
 expr: RESERVED_QUOTA | SCRIPT | BRACKET_STRING | VARIABLE | STRING;
 

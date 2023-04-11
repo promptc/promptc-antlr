@@ -1,5 +1,6 @@
 main
 lexer
+parser
 .idea
 .vscode
 .antlr

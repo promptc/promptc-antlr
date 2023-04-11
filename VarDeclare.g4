@@ -2,7 +2,7 @@ grammar VarDeclare;
 
 parse: expression;
 
-expression: VAR_NAME ':' TYPE CONSTRAIN EOF;
+expression: VAR_NAME ':' TYPE CONSTRAIN?;
 
 TYPE
     : ('string' | 'int' | 'float')
