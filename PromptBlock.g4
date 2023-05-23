@@ -2,7 +2,7 @@ grammar PromptBlock;
 
 parse: expr*;
 
-expr: RESERVED_QUOTA | SCRIPT | BRACKET_STRING | VARIABLE | STRING;
+expr: BRACKET_STRING ｜ RESERVED_QUOTA | SCRIPT | VARIABLE | STRING;
 
 RESERVED_QUOTA
     : '{%' (WS)* 'Q' (WS)* '%}'
